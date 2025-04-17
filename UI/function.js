@@ -1,6 +1,6 @@
 function search() {
     let keyword = document.getElementById("keyword").value;
-    api = `http://127.0.0.1:5000/search/${keyword}`;
+    let api = `http://127.0.0.1:5000/search/${keyword}`;
     fetch(api)
         .then(response => response.json())
         .then(data => {
